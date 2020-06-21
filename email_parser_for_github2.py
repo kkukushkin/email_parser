@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import imaplib
 import base64
 import email
@@ -58,4 +55,3 @@ if __name__ == '__main__':
     local_address = input('Enter your local address, where csv file should be saved:')
     parse_my_email(email_host, email_user, email_pass, local_address, mails)
     print(f'Please, find your file here: {local_address}mail_parsing_result.csv')
-
