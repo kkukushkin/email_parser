@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
 import imaplib
 import base64
 import email
@@ -12,7 +9,6 @@ from email.header import Header, decode_header, make_header
 from email import policy
 import quopri
 import pandas as pd
-
    
 
 def parse_my_email(email_host, email_user, email_pass, local_address, num_mails, box = 'INBOX'):
@@ -69,10 +65,3 @@ if __name__ == '__main__':                             #getting information from
         num_mails = input('Enter quantity of mails you want to parse: ')
         local_address = input('Enter your local address, where csv file should be saved:')
         parse_my_email(email_host, email_user, email_pass, local_address, num_mails)
-
-
-# In[ ]:
-
-
-
-
